@@ -1,0 +1,83 @@
+.bg{
+    margin: 100px auto;
+    width: 300px;
+    height: 300px;
+    perspective: 600px;
+}
+
+.cube{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 3s;
+    cursor: pointer;
+}
+
+.cube:hover{
+    transform: rotateX(360deg) rotateY(360deg);
+    transition: transform 5s;
+}
+
+.cube-face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.front{
+    background: rgba(0, 247, 0,.7);
+    transform: rotateX(0) translateZ(150px);
+}
+
+.left{
+    background: rgba(247, 124, 62,.7);
+    transform: rotatey(-90deg)translatez(150px);
+}
+
+.right{
+    background: rgba(247, 0, 0,.7);
+    transform: rotatey(90deg)translatez(150px);
+}
+
+.back{
+    background: rgba(0, 124, 247,.7);
+    transform: rotatey(180deg)translatez(150px);
+}
+
+.top{
+    background:rgba(128, 0, 128,.7);
+    transform: rotateX(90deg)translatez(150px);
+}
+
+.bottom{
+    background: rgba(247, 247, 0,.7);
+    transform: rotatex(-90deg)translatez(150px);
+}
+
+.row{
+    display: flex;
+}
+
+.row div{
+    width: 98px;
+    height: 99px;
+    border: 1px solid black;
+}
+
+.txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: orange;
+    font-size: 3rem;
+}
